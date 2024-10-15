@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #fb8500;
+  background: linear-gradient(270deg, #f36b3b, #fb8500);
+}
+#c {
+  background-color: #f30505;
+}
+.numpad {
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap into new lines */
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 10px; /* Adds equal spacing between buttons */
+}
+
+button {
+  flex: 1 1 50px; /* Ensures buttons have equal width and wrap properly */
+  max-width: 60px; /* Sets a maximum width for buttons */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  font-family: poppins, serif;
+  font-size: 13px;
+  background-color: #4a5157;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center; /* Centers text inside buttons */
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin: 0;
+}
+button:active {
+  box-shadow: none; /* Remove shadow when clicked */
+  transform: translateY(2px); /* Slightly move down when clicked */
+}
+button:hover {
+  background-color: #33373a;
+  transform: scale(1.1); /* Adds a slight zoom effect */
+}
+
+input {
+  font-family: "Courier New", Courier, monospace;
+  padding: 9px;
+
+  border-radius: 5px;
+  border: 1px solid #a99e9e;
+  width: 87%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.main {
+  background-color: #212529;
+  padding: 20px;
+  padding-left: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  height: 400px;
+  width: 240px;
+}
+h1 {
+  color: #fff;
+  padding-right: 7px;
+  text-align: center;
+}
+.equals {
+  margin-right: 9px;
+}
